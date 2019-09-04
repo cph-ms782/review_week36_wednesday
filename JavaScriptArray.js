@@ -68,7 +68,6 @@ console.log("Efter sort: " + all);
 // i)
 console.log('i)');
 console.log("Før map: " + all);
-
 var newAll = all.map(function hello(name){
     var fname = name.toUpperCase();
     return fname;
