@@ -41,16 +41,16 @@ console.log( cb(3,3,add) );
 // Resultat: Result from the two numbers: 3+3=6
 
 //6. console.log( cb(4,3,sub) ); // What will it print
-//Første gæt: Result from the two numbers: 3-3=0
+//Første gæt: Result from the two numbers: 4-3=1
 console.log( cb(4,3,sub) );
-// Resultat: 
+// Resultat: Result from the two numbers: 4+3=1
 
 //7. console.log(cb(3,3,add())); // What will it print (and what was the problem)
-//Første gæt: 
+//Første gæt: Fejl, men jeg ved ikke hvilken. add() er en metode og det så ud til at syntaxen skal være som var det en tekst
 //console.log(cb(3,3,add()));
-// Resultat: 
+// Resultat: TypeError: callback is not a function. Det skal nok være en reference til en function
 
 //8. console.log(cb(3,"hh",add));// What will it print
-//Første gæt: 
-//console.log(cb(3,"hh",add));
-// Resultat: 
+//Første gæt: 3hh
+console.log(cb(3,"hh",add));
+// Resultat: Result from the two numbers: 3+hh=3hh
