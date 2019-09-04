@@ -66,10 +66,14 @@ all.sort(function (a, b) {
 console.log("Efter sort: " + all);
 
 // i)
-//Virker ikke
 console.log('i)');
 console.log("Før map: " + all);
-var newAll = all.map(item => item.toUpperCase);
+
+var newAll = all.map(function hello(name){
+    var fname = name.toUpperCase();
+    return fname;
+}
+);
 console.log("Efter map: " + newAll);
 
 // m)
