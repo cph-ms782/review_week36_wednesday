@@ -72,12 +72,11 @@ console.log("Før map: " + all);
 var newAll = all.map(function hello(name){
     var fname = name.toUpperCase();
     return fname;
-}
-);
+});
 console.log("Efter map: " + newAll);
 
 // m)
-//Bruger l og P da der er navne med de forbogstaver
+//Bruger l og P da der er navne med de forbogstaver i arrayet
 console.log('m)');
 console.log("Før filter: " + all);
 const result = all.filter(name => name.charAt(0)==="l" || name.charAt(0)==="P");
