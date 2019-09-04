@@ -6,12 +6,16 @@
 [Link](https://github.com/cph-ms782/review_week36_wednesday/blob/master/JavaScriptArray.js)  
 
 ## Javascript Day1  
-#### JavaScript Functions  
+#### JavaScript Functions 
 [Link](https://github.com/cph-ms782/review_week36_wednesday/blob/master/JavaScriptFunctions.js)  
-#### Callbacks (with map, filter and forEach)  
+#### Callbacks (with map, filter and forEach) 
 [Link](https://github.com/cph-ms782/review_week36_wednesday/blob/master/Callback.js)  
-#### Asynchronous Callbacks  
+#### Asynchronous Callbacks 
 [Link](https://github.com/cph-ms782/review_week36_wednesday/blob/master/Asynchronous.js)  
+#### this and constructor functions 
+[Link](https://github.com/cph-ms782/review_week36_wednesday/blob/master/ThisAndConstructorFunctions.js)  
+#### JavaScript Objects 
+[Link](https://github.com/cph-ms782/review_week36_wednesday/blob/master/JavaScriptObjects.js)  
 
 
 
