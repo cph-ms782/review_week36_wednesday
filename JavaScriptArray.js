@@ -66,8 +66,16 @@ all.sort(function (a, b) {
 console.log("Efter sort: " + all);
 
 // i)
+//Virker ikke
 console.log('i)');
+console.log("Før map: " + all);
+var newAll = all.map(item => item.toUpperCase);
+console.log("Efter map: " + newAll);
 
 // m)
+//Bruger l og P da der er navne med de forbogstaver
 console.log('m)');
+console.log("Før filter: " + all);
+const result = all.filter(name => name.charAt(0)==="l" || name.charAt(0)==="P");
+console.log("Efter filter: " + result);
 
