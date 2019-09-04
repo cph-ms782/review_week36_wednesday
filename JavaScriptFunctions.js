@@ -11,6 +11,11 @@ var sub = function(n1,n2){
 
 //Callback example
 var cb = function(n1,n2, callback){
+  console.log(n1, typeof n1);
+  console.log(n2, typeof n2);
+  if (typeof n1 !== "number" ){ throw new Error('first number NaN!');};
+  if (typeof n2 !== "number" ){ throw new Error('second number NaN!');};
+  if (typeof callback !== "function" ){ throw new Error('Callback not a function ref');};
   return "Result from the two numbers: "+n1+"+"+n2+"="+callback(n1,n2);
 };
 
@@ -47,7 +52,11 @@ console.log( cb(4,3,sub) );
 
 //7. console.log(cb(3,3,add())); // What will it print (and what was the problem)
 //Første gæt: Fejl, men jeg ved ikke hvilken. add() er en metode og det så ud til at syntaxen skal være som var det en tekst
-//console.log(cb(3,3,add()));
+console.log("Starter try catch");
+try{console.log(cb(3,3,add))
+} catch(e){
+  console.log("Der er sket en fejl. En af de vedlagt attributer er af den forkerte type: \n" + e.name + ': ' + e.message);
+};
 // Resultat: TypeError: callback is not a function. Det skal nok være en reference til en function
 
 //8. console.log(cb(3,"hh",add));// What will it print
