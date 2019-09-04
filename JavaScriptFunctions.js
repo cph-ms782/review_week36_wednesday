@@ -1,3 +1,7 @@
+/**
+ * 1)
+ */
+
 //Function Declaration
        //Observe: no return type, no type on parameters
 function add(n1, n2){
@@ -6,9 +10,13 @@ function add(n1, n2){
 
 //Function Expression
 var sub = function(n1,n2){
-  return n1 - n2
+  return n1 - n2;
 };
 
+
+/**
+ * 3)
+ */
 //Callback example
 var cb = function(n1,n2, callback){
   console.log(n1, typeof n1);
@@ -19,6 +27,10 @@ var cb = function(n1,n2, callback){
   return "Result from the two numbers: "+n1+"+"+n2+"="+callback(n1,n2);
 };
 
+
+/**
+ *  2)
+ */
 //1. console.log( add(1,2) )     // What will this print?
 //Første gæt: 3
 console.log( add(1,2) );
@@ -61,5 +73,30 @@ try{console.log(cb(3,3,add))
 
 //8. console.log(cb(3,"hh",add));// What will it print
 //Første gæt: 3hh
-console.log(cb(3,"hh",add));
+//console.log(cb(3,"hh",add));
 // Resultat: Result from the two numbers: 3+hh=3hh
+
+
+/**
+ * 4)
+ */
+
+//Function Expression
+var mul = function(n1,n2){
+  return n1 * n2;
+};
+console.log("Starter mul function");
+try{console.log(cb(3,3,mul))
+} catch(e){
+  console.log("Der er sket en fejl. En af de vedlagt attributer er af den forkerte type: \n" + e.name + ': ' + e.message);
+};
+// Result from the two numbers: 3+3=9
+
+/**
+ * 5)
+ */
+try{console.log(cb(3,3, function(num1, num2){return num1/num2}))
+} catch(e){
+  console.log("Der er sket en fejl. En af de vedlagt attributer er af den forkerte type: \n" + e.name + ': ' + e.message);
+};
+//Result from the two numbers: 3+3=1
