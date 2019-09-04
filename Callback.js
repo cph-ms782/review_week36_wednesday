@@ -65,7 +65,15 @@ printNames(cars.filter(isVolvo).filter(isAfter1999).filter(isLowerPrice),"Volvoe
  * INSERT INTO cars (id,year,make,model,price) VALUES ( 1, 1997 , 'Ford','E350', 3000 );
  */
 function SQLify(car){
-    return "INSERT INTO cars (id,year,make,model,price) VALUES (" + car.model + ");";
+    var keys = [];
+    var values = [];
+    Object.keys(car).forEach(function(key) {
+
+        keys.push(key);
+        values.push(car[key]);
+      
+      });
+    return "INSERT INTO cars ("+ keys.join(",") +") VALUES (" + values.join(",") + ");";
 }
 
 function SQL(arr){
@@ -76,4 +84,9 @@ function SQL(arr){
     return newAll;
 }
 
-printNames(SQL(cars), "jkjk");
+printNames(SQL(cars), "SQL");
+
+/**
+ * 4b.
+ */
+printNames(SQL(cars.filter(isVolvo).filter(isLowerPrice)), "SQL for Volvo's under 5000");
