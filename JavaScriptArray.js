@@ -53,9 +53,17 @@ console.log(all);
 
 // j)
 console.log('j)');
+console.log("Før sort: " + all);
+all.sort();
+console.log("Efter sort: " + all);
 
 // k)
 console.log('k)');
+console.log("Før sort: " + all);
+all.sort(function (a, b) {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
+});
+console.log("Efter sort: " + all);
 
 // i)
 console.log('i)');
