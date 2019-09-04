@@ -22,7 +22,7 @@ console.log( add(1,2) );
 //2. console.log( add )          // What will it print and what does add represent?
 //Første gæt: undefined, den skrives som en variabel, som ikke er deklararet
 console.log( add );
-// Den skrev metoden deklarationen ud: function add(n1, n2){ … }
+// Den skrev metode-deklarationen ud: function add(n1, n2){ … }
 //Sikkert for at fortælle at den skulle have haft nogle værdier med til metoden
 
 //3. console.log( add(1,2,3) ) ; // What will it print
