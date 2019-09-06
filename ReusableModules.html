@@ -1,0 +1,38 @@
+
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+
+<button onclick="test1()">counter1</button>
+<span id="c1"></span>
+<button onclick="test2()">counter2</button>
+<span id="c2"></span>
+<button onclick="test3()">Set name and age</button>
+<span id="c3"></span>
+<button onclick="test4()">Get info</button>
+<span id="c4"></span>
+
+<script>
+    function test1(){
+        counter1.increment();
+        $("#c1").html(counter1.value());
+    }
+    function test2(){
+        counter2.decrement();
+        $("#c2").html(counter2.value());
+    }
+    function test3(){
+        counter3.setAge();
+        counter3.setName();
+        $("#c3").html("Peter og 45 år indsat");
+    }
+    function test4(){
+        counter4.getInfo();
+        $("#c4").html(counter4.getInfo());
+    }
+</script>
+
+<!-- henter javascript del -->
+<script src="ReusableModules.js"></script>

@@ -16,6 +16,9 @@
 [Link](https://github.com/cph-ms782/review_week36_wednesday/blob/master/ThisAndConstructorFunctions.js)  
 #### JavaScript Objects 
 [Link](https://github.com/cph-ms782/review_week36_wednesday/blob/master/JavaScriptObjects.js)  
+#### Reusable Modules with Closures  
+Sidste del af opgaven lykkedes ikke helt  
+[Link](https://github.com/cph-ms782/review_week36_wednesday/blob/master/ReusableModules.js)  
 
 
 
